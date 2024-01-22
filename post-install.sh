@@ -112,12 +112,13 @@ function main(){
     echo "Proceed with $(gum style --foreground '#a6e3a1' 'Installation')?"
     conformation=$(gum choose {"YES","NO"})
     if [[ $conformation == "YES" ]];then
-        # icon_pack
+        icon_pack
         install_fonts
-        # install_gtk_themes
-        # install_kvantum_theme
-        # install_mouse_cursor
-        # # sddm_theme
+        install_gtk_themes
+        install_kvantum_theme
+        install_mouse_cursor
+        install_volta_sh
+        sddm_theme
     else 
         exit 0
     fi
